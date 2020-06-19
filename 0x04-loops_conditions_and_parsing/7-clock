@@ -2,7 +2,7 @@
 # print the hours and minute
 count_h=0
 count_m=0
-while [ $count_h -le 12 ]
+while [ $count_h -le 11 ]
 do
 count_h=$((count_h+1))
 echo "Hour: $count_h"
