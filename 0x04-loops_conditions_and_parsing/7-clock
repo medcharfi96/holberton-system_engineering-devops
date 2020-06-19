@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # print the hours and minute
 count_h=0
-count_m=0
+count_m=1
 while [ $count_h -le 11 ]
 do
 count_h=$((count_h+1))
