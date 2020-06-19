@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# script that print holberton school 10 time
+for ((count=0; count<10; count++))
+do
+echo "Holberton School";
+done
