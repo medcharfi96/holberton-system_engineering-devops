@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# file details
+fichier="holbertonschool"
+if [ -e "$fichier" ]
+then
+echo "$fichier file exists"
+if [ -s "$fichier" ]
+then
+echo "$fichier file is not empty"
+else
+echo "$fichier file is empty"
+fi
+if [ -f "$fichier" ]
+then
+echo "$fichier is a regular file"
+fi
+else
+echo "$fichier file does not exist"
+fi
