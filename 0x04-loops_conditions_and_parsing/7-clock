@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# print the hours and minute
+count_h=0
+count_m=0
+while [ $count_h -le 12 ]
+do
+count_h=$((count_h+1))
+echo "Hour: $count_h"
+while [ $count_m -le 59 ]
+do
+echo "$count_m"
+((count_m++))
+done
+count_m=1
+done
