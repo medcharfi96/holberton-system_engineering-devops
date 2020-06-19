@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# print holberton 10 time
+count=11
+until [ $count -le 1 ]
+do
+    echo "Holberton School"
+    count=$((count-1))
+done
