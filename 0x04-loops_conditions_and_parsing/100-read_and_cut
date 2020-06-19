@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# read the passworld file
+while read -r ligne;
+do
+echo "$ligne" | cut -d ':' -f 1,3,6
+done < /etc/passwd
