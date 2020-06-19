@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#print fizzbuuuuuuuuuzzz
+for ((count=1; count< 101; count++))
+do
+if (( count%3 == 0 )) && (( count%5 == 0 ))
+then
+echo "FizzBuzz"
+elif (( count%5 == 0 ))
+then
+echo "Buzz"
+elif (( count%3 == 0 ))
+then
+echo "Fizz"
+else
+echo "$count"
+fi
+done
