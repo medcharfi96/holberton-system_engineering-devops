@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 # killing me softly with her song
-# Print specific message
 while ((5<1000000))
 do
+trap "echo I am invincible!!!" SIGTERM
 echo "To infinity and beyond"
 sleep 2
-trap "echo I am invincible!!!" 18
 done
