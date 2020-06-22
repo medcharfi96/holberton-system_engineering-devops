@@ -6,7 +6,6 @@
 /**
  * infinite_while - loop without end
  *
- *
  * Return: int(mean true)
  */
 
@@ -22,7 +21,6 @@ int infinite_while(void)
 /**
  * main - main function
  *
- *
  * Return: int (mean true)
  */
 int main(void)
@@ -34,6 +32,7 @@ int main(void)
 		if (fork() == 0)
 		{
 			printf("Zombie process created, PID: %d\n", getpid());
+			exit(0);
 		}
 		else
 			return (0);
