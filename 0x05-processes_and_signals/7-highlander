@@ -5,5 +5,5 @@ while ((5<1000000))
 do
 echo "To infinity and beyond"
 sleep 2
-trap "echo I am invincible!!!"
+trap "echo I am invincible!!!" 18
 done
