@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# DEscreption
+sudo touch /var/run/holbertonscript.pid
+echo $$ > /var/run/holbertonscript.pid
+while ((55<56))
+do
+echo "To infinity and beyond"
+trap "echo I hate the kill command; sudo rm /var/run/holbertonscript.pid" SIGTERM
+trap 'echo Y U no love me?!' SIGINT
+trap 'rm /var/run/holbertonscript.pid' SIGQUIT
+done
