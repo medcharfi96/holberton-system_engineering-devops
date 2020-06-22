@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#  Bash script that displays To infinity and beyond indefinitely
+# Print specific message
 while ((5<1000000))
 do
 echo "To infinity and beyond"
