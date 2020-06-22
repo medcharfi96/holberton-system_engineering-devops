@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# killing me softly with her song
+# Print specific message
+while ((5<1000000))
+do
+echo "To infinity and beyond"
+sleep 2
+trap "echo I am invincible!!!"
+done
