@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# descrip
+
+
+Aujourdhui=$(date +"%d-%m-%y")
+mysqldump -u root -p"$1" --all-databases > backup.sql
+tar -cvzf "$Aujourdhui.tar.gz" backup.sql
