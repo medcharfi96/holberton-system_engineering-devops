@@ -36,5 +36,7 @@ if __name__ == '__main__':
     for i in range(0, len(tabledemat)):
         print("\t" + tabledemat[i] + '\n')
     nom_fichier = argv[1] + '.json'
-    with open(nom_fichier, 'w') as fichie:
-        json.dump(tabledemat_2, fichie)
+    mini_cel = {}
+    mini_cel[argv[1]] = tabledemat_2
+    with open(nom_fichier, 'w') as ligne:
+        json.dump(mini_cel, ligne)
