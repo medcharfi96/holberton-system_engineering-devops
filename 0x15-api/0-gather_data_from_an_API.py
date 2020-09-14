@@ -26,4 +26,4 @@ if __name__ == '__main__':
     print('Employee {} is done with tasks({}/{}):'
           .format(nom, mat_thazet, mat_gen))
     for i in range(0, len(tabledemat)):
-        print("\t" + tabledemat[i])
+        print("\t " + tabledemat[i])
