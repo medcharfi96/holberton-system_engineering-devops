@@ -25,6 +25,5 @@ if __name__ == '__main__':
             tabledemat.append(z.get("title"))
     print('Employee {} is done with tasks({}/{}):'
           .format(nom, mat_thazet, mat_gen))
-    print('\n')
     for i in range(0, len(tabledemat)):
-        print("\t" + tabledemat[i] + '\n')
+        print("\t" + tabledemat[i])
