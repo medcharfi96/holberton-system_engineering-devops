@@ -4,10 +4,10 @@ task0
 """
 
 
-from sys import argv
+import csv
 import json
 import requests
-import csv
+from sys import argv
 if __name__ == '__main__':
     url = "https://jsonplaceholder.typicode.com/users/"
     url102 = "https://jsonplaceholder.typicode.com/todos/"
