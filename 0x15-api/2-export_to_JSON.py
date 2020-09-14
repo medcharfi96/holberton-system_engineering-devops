@@ -32,11 +32,10 @@ if __name__ == '__main__':
             tabledemat.append(z.get("title"))
     print('Employee {} is done with tasks({}/{}):'
           .format(nom, mat_thazet, mat_gen))
-    print('\n')
     for i in range(0, len(tabledemat)):
-        print("\t" + tabledemat[i] + '\n')
-    nom_fichier = argv[1] + '.json'
+        print("\t " + tabledemat[i])
+    nom_fichier = str(argv[1]) + '.json'
     mini_cel = {}
-    mini_cel[argv[1]] = tabledemat_2
+    mini_cel[int(argv[1])] = tabledemat_2
     with open(nom_fichier, 'w') as ligne:
         json.dump(mini_cel, ligne)
