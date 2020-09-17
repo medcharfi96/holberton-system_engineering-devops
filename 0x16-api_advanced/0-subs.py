@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """
 function that give the number of user iven not active
@@ -17,5 +16,5 @@ def number_of_subscribers(subreddit):
     try:
         return request.json().get('data').get('subscribers')
     except Exception:
-	    pass
+        pass
     return(0)
