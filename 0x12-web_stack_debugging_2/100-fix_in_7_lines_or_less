@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # adv
 sudo pkill -f apache2
-sudo chmod ugo+777 /etc/nginx/nginx.conf
+sudo chmod ugo+666 /etc/nginx/nginx.conf
 sed -i 's/80 default_server/8080 default_server/' /etc/nginx/sites-available/default
 sudo -u nginx service nginx start
