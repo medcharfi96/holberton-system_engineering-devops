@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#fix the bug 
+
+sudo rm /etc/nginx/sites-enabled/default
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx reload
+sudo service nginx restart
