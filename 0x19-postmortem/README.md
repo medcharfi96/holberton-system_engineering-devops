@@ -1,5 +1,5 @@
 # Postmortem for web stack debugging
-
+<img  src = "https://i.imgur.com/IczvSK5.png"> </img>
 ## Sumary
 ----------
 September 11th, 2018 server began to spit out 500 error on the web. By checking the server status on the docker container there was an Apache server configuration file that has a typo.
